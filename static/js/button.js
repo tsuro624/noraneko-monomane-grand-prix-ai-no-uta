@@ -1,3 +1,5 @@
+
+
 // グローバル変数
 var syncerSounds = {
 	flag: {} ,
