@@ -56,7 +56,7 @@ var koujo = {
 		{
 			// ファイル名の取得
 			var file = this.getAttribute( 'data-file' ) ;
-			 $('.main_image').attr('src', 'images/' + file + '.png');
+			 $('.main_image').attr('src', 'images/' + file + '.jpg');
 			 $('.koujo').text(koujo[file]);
 
  			// [audio]を生成するQ
