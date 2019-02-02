@@ -3,43 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="favicon.jpg">
+        <!-- <link rel="shortcut icon" href="favicon.jpg"> -->
         <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
-        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dU" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
         <!-- ＃リンクのスムーズスクロール -->
         <script>
-            $(function(){
-							  //
-                // #で始まるリンクをクリックしたら実行されます
-                $('a[href^="#"]').click(function() {
-                    // スクロールの速度
-                    var speed = 200; // ミリ秒で記述
-                    var href= $(this).attr("href");
-                    var target = $(href == "#" || href == "" ? 'html' : href);
-                    var position = target.offset().top;
-                    $('body,html').animate({scrollTop:position}, speed, 'swing');
-                    return false;
-                });
-            });
+            //
+            // $(function(){
+						// 	  //
+            //     // #で始まるリンクをクリックしたら実行されます
+            //     $('a[href^="#"]').click(function() {
+            //         // スクロールの速度
+            //         var speed = 200; // ミリ秒で記述
+            //         var href= $(this).attr("href");
+            //         var target = $(href == "#" || href == "" ? 'html' : href);
+            //         var position = target.offset().top;
+            //         $('body,html').animate({scrollTop:position}, speed, 'swing');
+            //         return false;
+            //     });
+            // });
         </script>
         <title>剣持ボタン</title>
     </head>
 
-    <body background="toya36.jpg" >
-        <div class="sakuin">
-            <a class="button" href="#index">▲</a>
-            <a href="#1">あ</a>
-            <a href="#2">か</a>
-            <a href="#3">さ</a>
-            <a href="#4">た</a>
-            <a href="#5">な</a>
-            <a href="#6">は</a>
-            <a href="#7">ま</a>
-            <a href="#8">や</a>
-            <a href="#9">ら</a>
-            <a href="#10">わ</a>
-        </div>
+    <body >
 
         <div id="index"> </div>
         <center><h1 style="color: #F3F781;">剣持ボタン</h1></center>
