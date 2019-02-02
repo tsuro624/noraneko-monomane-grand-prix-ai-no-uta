@@ -1,0 +1,96 @@
+{{ define "main" }}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.jpg">
+        <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dU" crossorigin="anonymous"> -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <!-- ＃リンクのスムーズスクロール -->
+        <script>
+            $(function(){
+							  //
+                // #で始まるリンクをクリックしたら実行されます
+                $('a[href^="#"]').click(function() {
+                    // スクロールの速度
+                    var speed = 200; // ミリ秒で記述
+                    var href= $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top;
+                    $('body,html').animate({scrollTop:position}, speed, 'swing');
+                    return false;
+                });
+            });
+        </script>
+        <title>剣持ボタン</title>
+    </head>
+
+    <body background="toya36.jpg" >
+        <div class="sakuin">
+            <a class="button" href="#index">▲</a>
+            <a href="#1">あ</a>
+            <a href="#2">か</a>
+            <a href="#3">さ</a>
+            <a href="#4">た</a>
+            <a href="#5">な</a>
+            <a href="#6">は</a>
+            <a href="#7">ま</a>
+            <a href="#8">や</a>
+            <a href="#9">ら</a>
+            <a href="#10">わ</a>
+        </div>
+
+        <div id="index"> </div>
+        <center><h1 style="color: #F3F781;">剣持ボタン</h1></center>
+
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://hoge.jp/" data-text="ほげボタン" data-size="large" data-count="horizontal" data-hashtags="ほげボタン">Tweet</a> <br><br>
+
+        <aside><b style="background-color: #FFFFFF;">このページは<a href="http://ushiumi.ichiya-boshi.net/" target="_blank" style="#F7819F">宇志海ボタン</a>のオマージュです。(作者は別人です。)</b></aside><br>
+
+        <button type="button" id="stop-button"><i class="far fa-stop-circle fa-5x"></i></button>
+        <br>
+
+        <b style="background-color: #F7F8E0;">↓01/16更新分</b><br><br>
+        <button style="background-color: #FAFAFA" type="button" class="sounds" data-file="./sounds/１＋１は２">１＋１は２</button>
+				<button style="background-color: #FAFAFA" type="button" class="sounds-hoge" data-file="./sounds/１＋１は２">１＋１は２ hoge</button>
+        <br><br><b style="background-color: #F7F8E0;">↑更新分</b><br><br>
+        <!--
+<button style="background-color: #FAFAFA" type="button" class="sounds" data-file="./sounds/"></button>
+-->
+
+        <b style="background-color: #F7F8E0;" id="1">あ行</b><b> </b><br><br>
+        <button style="background-color: #FAFAFA" type="button" class="sounds" data-file="./sound/あ">あ</button>
+
+        <br>
+        <br>
+
+        <a href="https://twitter.com/rei_toya_rei" target="_blank"><img src="./Twitter.png"></a>
+        <a href="https://www.youtube.com/channel/UCv1fFr156jc65EMiLbaLImw/featured" target="_blank"><img src="./Youtube.png"></a>
+        <a href="https://www.mirrativ.com/user/2573343" target="_blank"><img src="./Mirrativ.png"></a>
+        <a href="http://www.nicovideo.jp/user/78906841/mylist" target="_blank"><img src="./niconico.png"></a>
+        <a href="https://www.openrec.tv/user/23_toyakenmochi" target="_blank"><img src="./OPENREC.png"></a>
+        <br>
+        <table bgcolor="#FFFFFF">
+            <tr align="center">
+                <td width="320" height="600">
+                    <img id="comp-jepaou0qimgimage" alt="" data-type="image" style="width: 211px; height: 211px; object-fit: cover;" src="toya2.png">
+                    <br>
+                    <font color="#FF6161">剣持刀也／<br>Touya Kenmochi</font>
+                    <br><br>
+                    １６歳の高校２年生。剣道部所属の、隠れまじめ系男子。 普段は周りと合わせてじゃれているがダメな時はダメという。 以前から他の人の配信を見るのが好きでその憧れから始めた。 練習のしすぎで怪我が絶えないので、常に救急セットを持参している。
+                </td>
+                <td width="500" height="600">
+                    <a class="twitter-timeline" data-lang="ja" data-width="500" data-height="600" href="https://twitter.com/rei_Toya_rei?ref_src=twsrc%5Etfw">Tweets by rei_Toya_rei</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </td>
+            </tr>
+        </table>
+
+        <script src="./js/button.js"></script>
+    </body>
+</html>
+
+
+
+
+{{ end }}

@@ -1,0 +1,30 @@
+baseURL = "https://hoefuga.netlify.com/"
+languageCode = "ja"
+title = "My New Hugo Site aaa"
+theme = "vanilla-bootstrap-hugo-theme"
+
+
+
+
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  post = "/:filename/"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+
+
+[params]
+  includeBootstrapJs = false
+  showActiveNav = true
+  containerMaxWidth = "700px"
+  dateFormat = "Jan 2, 2006"
+  homeText = "Welcome to the Vanilla theme demo. Have a look around. Maybe even eat some ice cream."
+  footerText = ""
+  hideFooter = false
