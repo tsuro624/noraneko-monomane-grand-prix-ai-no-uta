@@ -1,0 +1,21 @@
+td {
+  text-align: center;
+  vertical-align: top;
+}
+
+th {
+  text-align: center;
+  font-style: italic;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+table {
+  width: 600px;
+}
+
+h5 {
+  font-stretch:ultra-condensed;
+  font-weight: 1000;
+  text-align: center;
+}
