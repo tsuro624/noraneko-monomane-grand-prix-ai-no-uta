@@ -8,7 +8,7 @@ var syncerSounds = {
 
 var koujo = {
 	"C-b": "ベイビー",
-	"C-r": "化膿してるHART",
+	"C-r": "化膿してるHEART",
 	"D-b": "プリーズ",
 	"D-r": "見せてよ",
 	"E-b": "メイク・ラブ",
