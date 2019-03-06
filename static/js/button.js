@@ -65,7 +65,7 @@ var koujo = {
 			document.body.appendChild( audio ) ;
 
 			// 再生
-			audio.volume = 0.05;
+			audio.volume = 0.03;
 			audio.play();
 			return false ;
 		}
